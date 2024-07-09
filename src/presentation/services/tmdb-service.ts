@@ -1,6 +1,5 @@
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
-import { envs } from '../../config';
-import { log } from '../../config';
+import { envs, log } from '../../config';
 import { languageContext, localeContext } from '../../context';
 
 export class TmdbApiService {

@@ -1,9 +1,8 @@
-// TODO
 export class StreamingEntity {
    constructor(
-      public readonly id: number,
-      public readonly name: string,
-      public readonly poster_path: string,
-      public readonly backdrop_path: string,
+      public readonly provider_id: number,
+      public readonly provider_name: string,
+      public readonly logo_path: string,
+      public readonly display_priority: number,
    ) {}
 }

@@ -1,4 +1,4 @@
-import { CacheRepository } from '../../domain';
+import { CacheRepository } from '../../domain/repositories';
 import { log, redisClient } from '../../config';
 import { Key, Language, Locale, TTL, Value } from '../../types';
 

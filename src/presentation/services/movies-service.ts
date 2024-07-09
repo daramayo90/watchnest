@@ -1,4 +1,4 @@
-import { MovieEntity } from '../../domain';
+import { MovieEntity } from '../../domain/entities';
 
 export class MovieService {
    async filterByTitle(movies: MovieEntity[], title: string): Promise<MovieEntity[]> {

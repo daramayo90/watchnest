@@ -1,5 +1,6 @@
-// TODO
-
 export interface StreamingMoviesParams {
-   page: number;
+   page?: string;
+   groupByWeeks?: boolean;
+   watchProviders: string;
+   sortBy?: string;
 }

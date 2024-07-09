@@ -1,4 +1,4 @@
-import { MovieEntity, MovieRepository } from '../..';
+import { MovieEntity, MovieRepository } from '../../../domain';
 import { CacheService } from '../../../presentation/services';
 import { StreamingMoviesParams } from '../../../types';
 import { getCachedData } from '../../../utils';
@@ -13,11 +13,11 @@ export class GetUpcomingStreamingMovies implements GetUpcomingStreamingMoviesUse
    async execute(params: StreamingMoviesParams): Promise<MovieEntity[]> {
       const { watchProviders } = params;
 
-      const cacheKey = `get-upcoming-streaming-movies:${watchProviders}`;
+      const key = `get-upcoming-streaming-movies:${watchProviders}`;
 
       return getCachedData(
          this.cacheService,
-         cacheKey,
+         key,
          () => this.repository.getUpcomingStreamingMovies(params),
          86400, // Cache for 1 day
       );

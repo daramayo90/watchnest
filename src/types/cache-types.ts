@@ -1,19 +1,9 @@
-export interface Key {
-   id: string;
-}
+export type Key = string;
+export type Language = string;
+export type Locale = string;
+export type Value = string;
+export type TTL = number;
 
-export interface Language {
-   code: string;
-}
-
-export interface Locale {
-   code: string;
-}
-
-export interface TTL {
-   seconds: number;
-}
-
-export interface Value {
-   [key: string]: any;
-}
+// export interface Value {
+//    [key: string]: any;
+// }
